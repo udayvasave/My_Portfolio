@@ -9,7 +9,7 @@ const Robot = () => {
     useEffect(()=>{
         const timer = setTimeout(()=>{
             setShowModel(true);
-        }, 1050);
+        }, 1060);
 
         return ()=> clearTimeout(timer);
     });
