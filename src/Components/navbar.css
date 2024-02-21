@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navcomponents ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar{
+    background-color: #212529;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.navcomponents ul li{
+text-decoration: none !important;
+list-style: none !important;
+padding: 0rem 1rem;
+margin: 0.5rem;
+color: #fff !important;
+}
+
+.navcomponents ul li a{
+    
+    color: #37c337 !important;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-size: 1.2rem;
+    text-align: center;
+    /* font-weight: 300; */
+    font-family: 'Quantico', sans-serif;
+}
