@@ -11,7 +11,7 @@ function App() {
    
     <Router>
 <div>
-  <Navbar/>
+  {/* <Navbar/> */}
   <Home/>
  
   {/* <Route path="/" Component={Home}/> 

@@ -43,3 +43,12 @@ color: #fff !important;
     /* font-weight: 300; */
     font-family: 'Quantico', sans-serif;
 }
+
+.buttonNav{
+    padding: 0;
+    /* color: ; */
+}
+
+.navbar{
+    z-index: 100;
+}

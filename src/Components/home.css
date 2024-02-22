@@ -26,7 +26,7 @@ flex-direction: column;
     background-color: #070707;
     /* background-color: yellow; */
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     display: flex;
     
 }
@@ -35,23 +35,29 @@ flex-direction: column;
 
 color: #fff;
 font-size: 5rem;
+font-weight: 800;
 /* padding-left: 2rem; */
 cursor:grab;
 
 }
-.Con1 h4,h6{
+.Con1 h4, .Con1 h6{
     color: #fff;
    
     font-size: 2rem;
 }
 
-.Con1-p2,.Con1-p1{
-    font-size: 1.2rem;
+.Con1-p2{
+    font-size: 1.1rem;
     color: #fff;
     /* padding-left: 2rem; */
     padding-bottom: 0.2rem;    
 }
-
+.Con1-p1{
+    font-size: 1.5rem;
+    color: #fff;
+    /* padding-left: 2rem; */
+    padding-bottom: 0.2rem;
+}
 .Text-fllstck{
     color:  #37c337;
     font-weight: 700;
@@ -77,3 +83,6 @@ cursor:grab;
     background-color: #070707;
 }
 
+.parainCon1{
+    color: #fff;
+}

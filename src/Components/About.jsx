@@ -5,6 +5,7 @@ import { FaReact } from "react-icons/fa";
 // import { RiFlutterFill } from "react-icons/ri";
 import { TbBrandFlutter } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
+import { motion } from 'framer-motion'
 
 const About = () => {
   return (
@@ -12,7 +13,8 @@ const About = () => {
     <div className="main-container">
 
     <div className="skills">
-        <h1>My Skills</h1>
+        <h1>My Skills<span className='dot'>.</span></h1>
+        <div className="line"></div>
     </div>
 
     <div className="big-box">
@@ -34,7 +36,7 @@ const About = () => {
     </div>
     <div className="con2">
     <div className="logoText">
-            <div className="SkillLogo"> <FaReact size={50} color='white' className='DesktopICon' /> </div>
+            <div className="SkillLogo" > <motion.div className="iconholder"  animate={{ rotate: 360 }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }}> <FaReact size={50} color='white'  className='DesktopICon' /></motion.div> </div>
             <div className="SkillHead"> <span className='skillTitle2'>Frontend Dev</span><span>  React, NextJS </span></div>
 
         </div>

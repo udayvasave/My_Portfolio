@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.skillsss-exp{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0rem 5rem;
+    flex-direction: row-reverse;
+}
+
+.skillsss-exp h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 0rem;
+    font-weight: 900;
+}
+.linee-exp{
+    height: 1px;
+    background-color: #6c757d;
+    flex:1;
+    margin-right: 2rem;
+    margin-top: 5px;
+    }
+
+.dott-exp{
+    color:green;
+  }
+
+.main-con-exp{
+    background-color: #070707;
+}
+
+.exp-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    color: #fff;
+    margin: 0rem 5rem 0rem 5rem;
+    padding: 0rem 2rem;
+    /* gap: 1rem; */
+}
+
+
+
+.exp1-expanded-company-duration, .exp1-expanded-desgn-place{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.exp1-expanded-tech,.exp1-expanded-company-duration, .exp1-expanded-desgn-place,.exp1-expanded-text{
+    margin-top: 0.7rem;
+}
+
+.techno-used{
+    display: flex;
+    /* justify-content:space-around; */
+    justify-content: start;
+    align-items: center;
+    
+
+}
+
+.techno-used span{
+    padding: 0.5rem;
+    background-color: #232323;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.exp-compname span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.exp-designation span{
+color: green;
+font-weight: 600;
+font-size: 1.2rem;
+}
+
+.exp1-expanded-text {
+/* padding-right: 5rem; */
+padding: 0rem 7rem 0rem 0rem;
+}
+
+.exp-horizontal-line{
+height: 1px;
+width: 100%;
+color: white;
+padding: 0rem 2rem;
+background-color: #212529;
+margin: 1rem 0rem;
+}
