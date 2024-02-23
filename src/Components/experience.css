@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 0rem 5rem;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .skillsss-exp h1 {
@@ -23,7 +23,7 @@
     height: 1px;
     background-color: #6c757d;
     flex:1;
-    margin-right: 2rem;
+    margin-left: 2rem;
     margin-top: 5px;
     }
 
@@ -42,7 +42,7 @@
     flex-direction: column;
     color: #fff;
     margin: 0rem 5rem 0rem 5rem;
-    padding: 0rem 2rem;
+    padding: 3rem 0.5rem 0rem 0.5rem;
     /* gap: 1rem; */
 }
 

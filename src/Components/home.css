@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+.section1{
+    height: 100vh;
+}
 
 .containers-home{
     display: flex;
@@ -12,7 +15,7 @@
 .Con1{
     flex:65%;
     background-color: #070707;
-    height: 90vh;
+    height: 100vh;
     display: flex;
 align-items: flex-start;
 justify-content:center;
@@ -22,7 +25,7 @@ flex-direction: column;
 
 .Con2{
     flex:35% !important;
-    height: 90vh;
+    height: 100vh;
     background-color: #070707;
     /* background-color: yellow; */
     justify-content: center;
@@ -85,4 +88,38 @@ cursor:grab;
 
 .parainCon1{
     color: #fff;
+}
+
+
+
+/* //////////////////////////////////////////////// */
+
+/* Define scrollbar width and color */
+::-webkit-scrollbar {
+    width: 7px; /* Adjust the width as needed */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #232323; /* Change the background color */
+   
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; /* Change the scrollbar handle color */
+    border-radius: 50px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:  #48b512; /* Change the scrollbar handle color on hover */
+
+  }
+
+  /* Track */
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1; Change the background color */
+   
 }

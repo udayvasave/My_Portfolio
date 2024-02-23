@@ -10,10 +10,14 @@ import { motion } from 'framer-motion'
 const About = () => {
   return (
     <>
-    <div className="main-container">
+    <div id='about' className="main-container">
 
     <div className="skills">
-        <h1>My Skills<span className='dot'>.</span></h1>
+        <motion.h1 
+        initial={{x:-200}}
+        animate={{x:0}}
+        transition={{duration:1, }} 
+        >My Skills<span className='dot'>.</span></motion.h1>
         <div className="line"></div>
     </div>
 

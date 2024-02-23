@@ -15,21 +15,27 @@
 }
 
 .navbar{
-    background-color: #212529;
-    position: sticky;
+    /* background-color: #000; */
+    position: fixed;
+    right: 0;
+    width: 100%;
     top: 0;
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    /* background: transparent; */
+    background-color: rgba(33, 37, 41, 1); /* Fully opaque color */
+  transition: background-color 0.3s ease;
+    
 }
 .navcomponents ul li{
 text-decoration: none !important;
 list-style: none !important;
 padding: 0rem 1rem;
 margin: 0.5rem;
-color: #fff !important;
+/* color: #fff !important; */
 }
 
 .navcomponents ul li a{
@@ -42,6 +48,7 @@ color: #fff !important;
     text-align: center;
     /* font-weight: 300; */
     font-family: 'Quantico', sans-serif;
+    cursor: default;
 }
 
 .buttonNav{
@@ -49,6 +56,21 @@ color: #fff !important;
     /* color: ; */
 }
 
+.navbar {
+    background-color: rgba(33, 37, 41, 0.8); 
+    backdrop-filter: blur(5px); 
+    transition: top 0.5s ease; 
+  }
 .navbar{
     z-index: 100;
 }
+
+.navbar.scrolled {
+    background-color: rgba(33, 37, 41, 0.7); /* Semi-transparent color when scrolled */
+  }
+
+  /* ////// */
+
+  .navbar.hidden {
+    top: -60px; /* Hide the navbar off-screen */
+  }

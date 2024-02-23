@@ -6,7 +6,7 @@ import tapal from "../assets/images/Tapal monitoring system.png"
 
 const Work = () => {
   return (
-    <div className='section3'>
+    <div id='work' className='section3'>
 
         <div className="mai-con">
 

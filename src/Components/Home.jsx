@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import "./home.css"
 import ThreeDObject from './ThreeDObject'
-import { motion } from 'framer-motion'
+import { motion,useAnimation } from 'framer-motion'
 import Rocket from './Rocket'
 import About from './About'
 import Robot from './Robot'
@@ -9,10 +9,29 @@ import { useLocation } from 'react-router-dom'
 import Navbar from './Navbar'
 import Work from './Work'
 import Experience from './Experience'
+import Contact from './Contact'
 
 // import { Application } from '@splinetool/runtime';  
 
 const Home = () => {
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        const navbarHeight = document.querySelector("nav").offsetHeight; // Get height of the navbar
+        const top = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        window.scrollTo({ top, behavior: "smooth" });
+    }
+};
+
+useEffect(() => {
+  window.scrollTo(
+    {top:0,
+    behavior:"smooth"
+    }
+  ); // Scroll to the top of the page on component mount
+}, []);
+
 
   const skillsRef = useRef(null);
   // const location = useLocation();
@@ -21,23 +40,43 @@ const Home = () => {
     skillsRef.current.scrollIntoView({behaviour : "smooth"});
   };
 
-////////////////////////////////////// home ////////////////////////////
-  // const homeRef = useRef(null);
-  // const locations = useLocation();
+//////////////////////////////////////////////////////// scroll animation //////////////////////////////
+  const controls = useAnimation();
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sectionOffset = document.getElementById('sec2').offsetTop; // Replace 'your-section-id' with the actual ID of your section
+      const windowHeight = window.innerHeight;
 
-  // useEffect(()=>{
-  //   const hashs= location.hash.substring(1);
-  //   if (hashs === 'home'){
-  //     skillsRef.current.scrollIntoView({behaviour : 'smooth'});
-  //   }
-  // },[location]);
+      // Calculate the distance between the scroll position and the section
+      const distance = Math.abs(scrollPosition - sectionOffset);
 
-  // const [move, setMove] = useState(false);
+      // Adjust the animation based on the distance from the section
+      controls.start({
+        opacity: distance < windowHeight ? 1 : 0, // Fade in when close to the section, fade out when far away
+        scale: distance < windowHeight ? 1 : 0.5, // Scale up when close to the section, scale down when far away
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [controls]);
+
+
+
+
+
+
+
   return (
     <>
-    <Navbar />
+   
+    <Navbar scrollToSection={scrollToSection} />
     <div className="section1" >
-<div className="containers-home">
+<div id='home' className="containers-home">
   <div className="outerCon1">
 
   <div className="Con1">
@@ -98,15 +137,20 @@ className='parainCon1'>Over the past four years, I've been deeply immersed in bu
 </div>
 </div>
 
-<div className="section2" ref={skillsRef} >
-  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}> <About/> </motion.div>
+<div id='sec2' className="section2" ref={skillsRef} >
+  <motion.div 
+   // Animation duration
+  > <About/> </motion.div>
 </div>
 
-<div className="section3">
+<div  className="section3">
   <Work/>
 </div>
-<div className="section4">
+<div  className="section4">
   <Experience/>
+</div>
+<div  className="section5">
+  <Contact/>
 </div>
 
     </>

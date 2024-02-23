@@ -1,0 +1,99 @@
+*{
+margin: 0;
+padding: 0%;
+box-sizing: border-box;
+}
+
+.main-container-contact{
+    margin: 0rem 5rem;
+}
+
+.section5{
+    background-color: #070707;
+    padding: 3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactHead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactHead h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+.contactHead h1 span {
+    color: green;
+}
+.contact-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials-med{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.social1 a,.social2 a,.social3 a,.social4 a{
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+text-decoration: none;
+}
+
+.social1,.social2,.social3,.social4{
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+}
+
+.socialiconsandtext{
+    display: flex;
+align-items: center;
+justify-content: center;
+/* flex-direction: row; */
+}
+
+.icon-text{
+    color: #fff;
+    font-size: 1rem;
+    
+}
+
+.icon-con{
+    padding-right: 1rem;
+}
+
+
+.react-icon,.icon-text {
+    color: #fff;
+    transition: color 0.3s ease; 
+  }
+
+ 
+
+  .contact-text span{
+    color: #fff;
+  }
+
+  .contact-text{
+    padding: 2rem 16rem;
+  }
+
+  .react-icon:hover{
+    fill: green;
+  }
+
+  .icon-text:hover{
+    color: green;
+   
+  }
