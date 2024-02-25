@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./contact.css"
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineLinkedin } from "react-icons/ai";
@@ -8,6 +8,17 @@ import { CiTwitter } from "react-icons/ci";
 
 
 const Contact = () => {
+
+const [isHover, setIsHover] = useState(false);
+
+const handleMouseEnter = ()=>{
+setIsHover(true);
+}
+ const handlemouseLeave  = ()=> {
+  setIsHover(false);
+ }
+
+
   return (
     <>
     <div id='contact' className="section5">
@@ -20,7 +31,7 @@ const Contact = () => {
     </div>
     <div className="socialiconsandtext">
     <div className="socials-med">
-        <div className="social1"> <a href=""><div className="icon-con">< AiOutlineMail className='react-icon' size={30} /> </div> </a> <a href=""><div className="icon-text">milindvavare@gmail.com</div></a></div>
+        <div className="social1"> <a onMouseHover={handleMouseEnter} onMouseLeave={handlemouseLeave} style={{color: isHover ? 'green' : 'white'}} href="mailto:milindvavare@gmail.com"><div className="icon-con" >< AiOutlineMail style={{backgroundColor: isHover ? 'yellow' : 'transparent',}}  className='react-icon' size={30} /> </div> </a> <a href="mailto:milindvavare@gmail.com"><div className="icon-text">milindvavare@gmail.com</div></a></div>
         <div className="social2"><a href=""><div className="icon-con"><  AiOutlineLinkedin className='react-icon' size={30}/></div> </a> <a href=""><div className="icon-text">LinkedIn</div></a></div>
         <div className="social3"><a href=""><div className="icon-con">< AiOutlineInstagram className='react-icon' size={30}/></div></a><a href=""> <div className="icon-text">Instagram</div></a></div>
         <div className="social4"><a href=""><div className="icon-con">< CiTwitter className='react-icon' size={30}/></div></a> <a href=""><div className="icon-text">Twitter</div></a></div>

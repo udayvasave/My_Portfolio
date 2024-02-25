@@ -123,3 +123,7 @@ cursor:grab;
     /* background: #f1f1f1; Change the background color */
    
 }
+
+@media only screen and (max-width:800px){
+    
+}

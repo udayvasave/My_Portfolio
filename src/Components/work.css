@@ -134,3 +134,21 @@ background-color: #070707;
     gap: 1rem;
     display: flex;
 }
+
+.button{
+    margin-top: 1rem;
+  
+   
+}
+
+.button span{
+background-color: green;
+padding: 0.5rem;
+border-radius: 5px;
+text-decoration: none;
+color: white;
+}
+
+.Link {
+    text-decoration: none;
+}

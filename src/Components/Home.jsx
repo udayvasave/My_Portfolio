@@ -18,55 +18,50 @@ const Home = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-        const navbarHeight = document.querySelector("nav").offsetHeight; // Get height of the navbar
-        const top = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
-        window.scrollTo({ top, behavior: "smooth" });
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      const top = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      window.scrollTo({ top, behavior: 'smooth' });
     }
-};
-
-useEffect(() => {
-  window.scrollTo(
-    {top:0,
-    behavior:"smooth"
-    }
-  ); // Scroll to the top of the page on component mount
-}, []);
-
-
-  const skillsRef = useRef(null);
-  // const location = useLocation();
-
-  const scrollToSkills = ()=>{
-    skillsRef.current.scrollIntoView({behaviour : "smooth"});
   };
 
+// useEffect(() => {
+//   window.scrollTo(
+//     {top:0,
+//     behavior:"smooth"
+//     }
+//   ); // Scroll to the top of the page on component mount
+// }, []);
+
+
+  // const skillsRef = useRef(null);
+  // const location = useLocation();
+
+  
+
 //////////////////////////////////////////////////////// scroll animation //////////////////////////////
-  const controls = useAnimation();
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const sectionOffset = document.getElementById('sec2').offsetTop; // Replace 'your-section-id' with the actual ID of your section
-      const windowHeight = window.innerHeight;
+  // const controls = useAnimation();
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY;
+  //     const sectionOffset = document.getElementById('sec2').offsetTop; // Replace 'your-section-id' with the actual ID of your section
+  //     const windowHeight = window.innerHeight;
 
-      // Calculate the distance between the scroll position and the section
-      const distance = Math.abs(scrollPosition - sectionOffset);
+  //     // Calculate the distance between the scroll position and the section
+  //     const distance = Math.abs(scrollPosition - sectionOffset);
 
-      // Adjust the animation based on the distance from the section
-      controls.start({
-        opacity: distance < windowHeight ? 1 : 0, // Fade in when close to the section, fade out when far away
-        scale: distance < windowHeight ? 1 : 0.5, // Scale up when close to the section, scale down when far away
-      });
-    };
+  //     // Adjust the animation based on the distance from the section
+  //     controls.start({
+  //       opacity: distance < windowHeight ? 1 : 0, // Fade in when close to the section, fade out when far away
+  //       scale: distance < windowHeight ? 1 : 0.5, // Scale up when close to the section, scale down when far away
+  //     });
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [controls]);
-
-
-
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [controls]);
 
 
 
@@ -74,7 +69,7 @@ useEffect(() => {
   return (
     <>
    
-    <Navbar scrollToSection={scrollToSection} />
+    <Navbar  scrollToSection={scrollToSection} />
     <div className="section1" >
 <div id='home' className="containers-home">
   <div className="outerCon1">
@@ -129,27 +124,27 @@ className='parainCon1'>Over the past four years, I've been deeply immersed in bu
     </div>
   </div>
  
-    <motion.div  className="Con2">
+    <motion.div  className="Con2" style={{backgroundColor: 'red'}}>
     {/* <ThreeDObject/> */}
-    <Robot/>
+    {/* <Robot/> */}
     </motion.div>  
 
 </div>
 </div>
 
-<div id='sec2' className="section2" ref={skillsRef} >
+<div id='sec2' className="section2"  >
   <motion.div 
    // Animation duration
   > <About/> </motion.div>
 </div>
 
-<div  className="section3">
+<div  id='section3' className="section3">
   <Work/>
 </div>
-<div  className="section4">
+<div  id='section4' className="section4">
   <Experience/>
 </div>
-<div  className="section5">
+<div id='section5' className="section5">
   <Contact/>
 </div>
 

@@ -1,63 +1,49 @@
-import React, {useState,useEffect} from 'react';
+
+import { FaBars,FaTimes } from "react-icons/fa";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css"
-// import {Link } from 'react-router-dom';
-import About from './About';
-import Link from 'react-scroll';
-// import { useEffect, useState } from "react"
+
 
 function Navbar({scrollToSection}) {
 
-  // const [isScrolled, setIsScrolled] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrolled = window.scrollY > 0;
-  //     setIsScrolled(scrolled);
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-  
-
-  const [isHidden, setIsHidden] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const viewportHeight = window.innerHeight;
-      setIsHidden(scrollPosition > 0 && scrollPosition < viewportHeight * 0.8);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+ const [click, setClick] = useState(false);
+  const handleClick = () => {
+    setClick(!click);
+  };
 
   return (
-    <>
-    {/* <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}> */}
-    <nav className={`navbar ${isHidden ? 'hidden' : ''}`}>
-        <div className="navcomponents">
-            <ul>
-                <li><a  onClick={()=> scrollToSection("home")} >{'<home/>'}</a></li>
-                <li><a  onClick={()=> scrollToSection("about")} >{'<skills/>'}</a></li>
-                <li><a  onClick={()=> scrollToSection("work")} >{'<work />'}</a></li>
-                <li><a  onClick={()=> scrollToSection("exp")} >{'<experience />'}</a></li>
-                <li><a  onClick={()=> scrollToSection("contact")}>{'<contact />'}</a></li>
-                {/* <li><Link to="about" smooth={true} duration={500}>About</Link></li> */}
-                {/* <li><a href="/" >Contact</a></li> */}
-            </ul>
-           
-        </div>
-    </nav>
-    </>
+    <div className="navbar">
+      <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <li>
+          {/* <Link to="/"  onClick={()=> scrollToSection('home')}>{'<home />'}</Link> */}
+          <a  onClick={()=> scrollToSection('home')}> {'<home />'}</a>
+        </li>
+        <li>
+          
+          {/* <Link to="#sec2">{'<skills />'}</Link> */}
+          <a onClick={()=> scrollToSection('sec2')}> {'<skills />'}</a>
+        </li>
+        <li>
+          {/* <Link to="/resume">{'<home />'}</Link> */}
+          <a  onClick={()=> scrollToSection('section3')}> {'<work />'}</a>
+        </li>
+        <li>
+          {/* <Link to="/contact">{'<home />'}</Link> */}
+          <a  onClick={()=> scrollToSection('section4')}> {'<experience />'}</a>
+        </li>
+        <li>
+          <a  onClick={()=> scrollToSection('section5')}> {'<contact />'}</a>
+        </li>
+      </ul>
+      <div className="hamburger" onClick={handleClick}>
+        {click ? (
+          <FaTimes size={30} style={{ color: "#ffffff" }} />
+        ) : (
+          <FaBars size={30} style={{ color: "#ffffff" }} />
+        )}
+      </div>
+    </div>  
   )
 }
 
