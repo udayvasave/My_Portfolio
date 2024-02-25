@@ -97,3 +97,35 @@ justify-content: center;
     color: green;
    
   } */
+
+
+  @media only screen and (max-width:800px){
+    .contact-text{
+        padding: 2rem 2rem;
+      }
+
+      .main-container-contact{
+        margin: 0rem 1rem;
+    }
+    .contactHead{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+    }
+    .contactHead h1{
+        font-size: 3rem;
+    }
+    .contact-text{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem 0rem;
+    }
+    .socialiconsandtext{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem 0rem;
+    }
+  }

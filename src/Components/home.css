@@ -125,5 +125,15 @@ cursor:grab;
 }
 
 @media only screen and (max-width:800px){
-    
+    .containers-home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Con1{
+        padding-left: 1.5rem;
+        padding-right: 1.5;
+    }
+
 }

@@ -61,12 +61,11 @@ transform: rotate(-2deg);
 .big-box-work{
     margin: 2rem 5rem 0rem 5rem;
     padding: 0rem 0rem 0rem 0rem;
-    gap: 1rem
-}
-
-.big-box-work{
+    gap: 1rem;
     display: flex;
 }
+
+
 .con1-work,.con2-work,.con3-work{
 padding: 2rem 1.5rem;
 border-radius: 10px;
@@ -151,4 +150,26 @@ color: white;
 
 .Link {
     text-decoration: none;
+}
+
+@media only screen and (max-width:800px){
+    .big-box-work{
+        margin: 2rem 1rem 0rem 1rem;
+        padding: 0rem 0rem 0rem 0rem;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .big-box-work2{
+        margin: 0rem 1rem 0rem 1rem;
+        padding: 0rem 0rem 3rem 0rem;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
 }

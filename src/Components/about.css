@@ -155,3 +155,42 @@ color:green;
     .iconholder{
         z-index: -1;
     }
+
+
+    @media only screen and (max-width:800px){
+        .big-box{
+            display: flex;
+            align-items: center;
+            justify-content:space-around;
+            flex-direction: column;
+            border: 2px solid green;
+            /* height: 20rem; */
+            margin: 1rem 1rem;
+            /* padding-bottom: 3rem; */
+        
+        }
+
+        .con3{
+            border-top: 2px solid rgb(96, 174, 96);
+            border-left: none;
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem;
+        /* background-color: grey; */
+        flex: 1;
+        /* border-right: 2px solid green; */
+        }
+        .con1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-bottom: 2px solid green;
+            border-right: none;
+            padding: 3rem;
+            /* background-color: blue; */
+            flex: 1;
+            }
+    }

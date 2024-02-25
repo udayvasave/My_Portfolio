@@ -98,3 +98,42 @@ padding: 0rem 2rem;
 background-color: #212529;
 margin: 1rem 0rem;
 }
+
+
+
+@media only screen and (max-width:800px){
+    .techno-used {
+        flex-wrap: wrap;
+        }
+    .techno-used span {
+              flex: 1 0 auto; 
+    width: auto; 
+    margin: 5px 5px; 
+
+
+        } 
+
+        .exp1-expanded-company-duration, .exp1-expanded-desgn-place{
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .exp1-expanded-text{
+            padding: 0rem 0rem 0rem 0rem;
+        }
+
+        .exp-box{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            color: #fff;
+            margin: 0rem 1rem 0rem 1rem;
+            padding: 3rem 0.5rem 0rem 0.5rem;
+            /* gap: 1rem; */
+        }
+       
+}
