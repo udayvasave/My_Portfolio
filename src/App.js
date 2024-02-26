@@ -13,7 +13,8 @@ function App() {
     <Router>
    {/* <Home/> */}
    <Routes>
-   <Route exact path="/" Component={Home}/> 
+   <Route exact path="/" Component={Home}/>
+   <Route path="/skills" Component={About}/> 
     <Route path="/ProjectMatri" Component={ProjectMatri}/>  
     </Routes>
 </Router>

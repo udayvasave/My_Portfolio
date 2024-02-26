@@ -63,7 +63,20 @@ const Home = () => {
   //   };
   // }, [controls]);
 
+  const location = useLocation();
 
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.slice(1));
+      const navbarHeight = document.querySelector('.navbar').offsetHeight;
+      const top = element.getBoundingClientRect().top + window.scrollY - navbarHeight;
+      if (element) {
+        element.scrollIntoView({top, behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo(0, 0); // Scroll to the top if no hash is present
+    }
+  }, [location]);
 
 
   return (

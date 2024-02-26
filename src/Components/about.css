@@ -97,7 +97,7 @@ flex: 1;
     /* border-right: 2px solid green;   */
 }
 .con3{
-    border-left: 2px solid rgb(96, 174, 96);
+    border-left: 2px solid green;
     display: flex;
 align-items: center;
 justify-content: center;

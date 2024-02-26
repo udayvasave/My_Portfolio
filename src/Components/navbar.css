@@ -37,7 +37,7 @@
 }
 
 .navbar ul li a {
-  color: #ffffff;
+  color: green;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -49,7 +49,21 @@
   position: absolute;
   display: none;
 }
-
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: none;
+}
+.socials a{
+float: left;
+left: 2rem;
+/* position:absolute; */
+padding: 0rem 0.5rem;
+text-decoration: none;
+color: grey;
+display: none;
+}
 @media screen and (max-width: 950px) {
   .nav-menu {
     display: flex;
@@ -76,8 +90,40 @@
     display: block;
     z-index: 3;
   }
+
+  .socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: block;
+  }
+  .socials a{
+  float: left;
+  left: 2rem;
+  /* position:absolute; */
+  padding: 0rem 0.5rem;
+  text-decoration: none;
+  color: grey;
+  display: block;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0rem 1rem;
+  }
+
 }
 
 .nav-menu.active {
   left: 0;
+}
+
+
+.hamburger {
+  transition: transform 0.3s ease-in-out; /* Add transition to transform property */
+}
+
+.nav-menu.active + .hamburger {
+  transform: rotate(90deg); /* Rotate the hamburger icon to close icon */
 }
