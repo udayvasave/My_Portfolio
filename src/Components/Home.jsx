@@ -10,6 +10,7 @@ import Navbar from './Navbar'
 import Work from './Work'
 import Experience from './Experience'
 import Contact from './Contact'
+import LottieAnimation from './LottieAnimation'
 
 // import { Application } from '@splinetool/runtime';  
 
@@ -115,16 +116,16 @@ transition={{duration:1, }}
 >
 Hey, I'm Milind </motion.h1>
 <motion.p 
-initial={{y:-200}}
-animate={{y:0}}
+initial={{x:-1200}}
+animate={{x:0}}
 transition={{duration:1, }} className='Con1-p1'><motion.div className='Text-fllstck'  >Fullstack & App Developer </motion.div></motion.p>
 
 <motion.p 
-initial={{y:-200}}
-animate={{y:0}}
+initial={{x:-1300}}
+animate={{x:0}}
 transition={{duration:1, }} className='Con1-p2'>Founder @DMS Computers & Technology</motion.p>
 <motion.p
- initial={{x:1000}}
+ initial={{x:-1400}}
 animate={{x:0}}
 transition={{duration:1}}
  
@@ -137,9 +138,12 @@ className='parainCon1'>Over the past four years, I've been deeply immersed in bu
     </div>
   </div>
  
-    <motion.div  className="Con2" style={{backgroundColor: 'red'}}>
+    <motion.div initial={{x:1200}}
+animate={{x:0}}
+transition={{duration:1, }} className="Con2" >
     {/* <ThreeDObject/> */}
     {/* <Robot/> */}
+    <LottieAnimation/>
     </motion.div>  
 
 </div>
