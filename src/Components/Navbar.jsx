@@ -29,8 +29,8 @@ function Navbar({scrollToSection}) {
       </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          {/* <Link to="/"  onClick={()=> scrollToSection('home')}>{'<home />'}</Link> */}
-          <a  onClick={()=> { scrollToSection('home'); handleLinkClick(); }}  > {'<home />'}</a>
+          <Link to="/"  onClick={()=>{ scrollToSection('home');handleLinkClick();}}>{'<home />'}</Link>
+          {/* <a  onClick={()=> { scrollToSection('home'); handleLinkClick(); }}  > {'<home />'}</a> */}
         </li>
         <li>
           

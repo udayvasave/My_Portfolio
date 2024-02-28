@@ -1,0 +1,12 @@
+.lottie-animation {
+    height: 400px;
+    width: 400px;
+  }
+  
+  /* Adjust size for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .lottie-animation {
+      height: 300px;
+      width: 300px;
+    }
+  } 

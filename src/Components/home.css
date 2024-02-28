@@ -155,7 +155,7 @@ cursor:grab;
     justify-content:center;
     flex-direction: column;
        padding-left: 1rem;
-       padding-bottom: 5rem;
+       padding-bottom: 2rem;
        padding-right:2rem
     }
 .outerCon1{
@@ -187,7 +187,7 @@ cursor:grab;
     justify-content: end;
 }
 .section1{
-    height: auto;
+    height: 100vh;
 }
 .Con1 h1{
 
@@ -198,4 +198,5 @@ cursor:grab;
     cursor:grab;
     
     }
+
 }

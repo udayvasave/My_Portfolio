@@ -103,7 +103,7 @@ const Home = () => {
 
 //  whileHover={{scale:1.1}}
 // drag whileDrag={{scale:1.1}}
-drag dragConstraints={{left:0,top:0,right:450,bottom:200}}
+drag dragConstraints={{left:0,top:10,right:50,bottom:200}}
 
 // animate={{rotate:[0,180,180,0]}}
 // transition={{repeat:5, duration:1}}

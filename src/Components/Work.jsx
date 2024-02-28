@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import riv from '../assets/images/rivGradient.png';
 import tapal from "../assets/images/Tapal monitoring system.png"
 import { Link } from 'react-router-dom';
-import ProjectMatri from './ProjectMatri';
+
 
 const Work = () => {
   return (
@@ -23,23 +23,23 @@ const Work = () => {
                 <div className="label"><h3>Matrimony Web & Mobile App</h3><div className="h-line"></div></div>
                 <div className="techInfo"><p>HTML - CSS - JS - PHP - SQL</p></div>
                 <div className="descrp"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate culpa quo consequatur natus ipsum dolor sit amet, consectetur adipisicing elit </p></div>
-                <Link className='Link' to="/ProjectMatri"> <div className="button"><span >Read More</span></div></Link>
+                <a className='Link' href="/Project1"> <div className="button"><span >Read More</span></div></a>
                 </div>
            
-            <div className="con2-work" style={{display:'none'}}> 
+            {/* <div className="con2-work" style={{display:'none'}}> 
             <div className="image"><img src={riv} alt="" /></div>
             <div className="label"><h3>Matrimony Web App</h3><div className="h-line"></div></div>
                 <div className="techInfo"><p>HTML - CSS - JS - PHP - SQL</p></div>
                 <div className="descrp"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate culpa quo consequatur natus ipsum dolor sit amet, consectetur adipisicing elit </p></div>
-                <Link className='Link' to="/ProjectMatri"> <div className="button"><span >Read More</span></div></Link>
-            </div>
+                <Link className='Link' to="/Project2"> <div className="button"><span >Read More</span></div></Link>
+            </div> */}
 
             <div className="con3-work">
             <div className="image"><img src={tapal} alt="" /></div>
             <div className="label"><h3>School Management Web & Mobile App</h3><div className="h-line"></div></div>
                 <div className="techInfo"><p>HTML - CSS - JS - PHP - SQL</p></div>
                 <div className="descrp"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate culpa quo consequatur natus ipsum dolor sit amet, consectetur adipisicing elit </p></div>
-               <Link className='Link' to="/ProjectMatri"> <div className="button"><span >Read More</span></div></Link>
+               <Link className='Link' to="/Project2"> <div className="button"><span >Read More</span></div></Link>
             </div>
 
             </div>
@@ -51,25 +51,25 @@ const Work = () => {
                 <div className="label"><h3>Matrimony Web & Mobile App</h3><div className="h-line"></div></div>
                 <div className="techInfo"><p>HTML - CSS - JS - PHP - SQL</p></div>
                 <div className="descrp"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate culpa quo consequatur natus ipsum dolor sit amet, consectetur adipisicing elit </p></div>
-                <Link className='Link' to="/ProjectMatri"> <div className="button"><span >Read More</span></div></Link>
+                <Link className='Link' to="/Project3"> <div className="button"><span >Read More</span></div></Link>
 
                 </div>
            
-            <div className="con2-work" style={{display:'none'}}> 
+            {/* <div className="con2-work" style={{display:'none'}}> 
             <div className="image"><img src={riv} alt="" /></div>
             <div className="label"><h3>Matrimony Web App</h3><div className="h-line"></div></div>
                 <div className="techInfo"><p>HTML - CSS - JS - PHP - SQL</p></div>
                 <div className="descrp"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate culpa quo consequatur natus ipsum dolor sit amet, consectetur adipisicing elit </p></div>
-                <Link className='Link' to="/ProjectMatri"> <div className="button"><span >Read More</span></div></Link>
+                <Link className='Link' to="/"> <div className="button"><span >Read More</span></div></Link>
 
-            </div>
+            </div> */}
 
             <div className="con3-work">
             <div className="image"><img src={tapal} alt="" /></div>
             <div className="label"><h3>Tapal Monitoring System</h3><div className="h-line"></div></div>
                 <div className="techInfo"><p>HTML - CSS - JS - PHP - SQL</p></div>
                 <div className="descrp"><p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate culpa quo consequatur natus ipsum dolor sit amet, consectetur adipisicing elit </p></div>
-                <Link className='Link' to="/ProjectMatri"> <div className="button"><span >Read More</span></div></Link>
+                <Link className='Link' to="/Project4"> <div className="button"><span >Read More</span></div></Link>
 
             </div>
 

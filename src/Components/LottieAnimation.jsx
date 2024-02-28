@@ -1,23 +1,26 @@
 import React from 'react'
 import Lottie from 'react-lottie';
 import animationData from '../assets/lottie/Animation - 1709020583229.json'
+import './lottie.css';
 
 const LottieAnimation = () => {
 
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData, // The imported animation JSON file
-        rendererSettings: {
-          preserveAspectRatio: 'xMidYMid slice'
-        }
-      };
+    
   return (
     <>
-    <Lottie 
-        options={defaultOptions}
-        height={400}
-        width={400}
+   <Lottie className='lottie-animation'
+        options={{
+          loop: true,
+          autoplay: true,
+          animationData: animationData,
+          rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+          }
+        }}
+        height={350} // Default height
+        width={350}  // Default width
+        isStopped={false}
+        isPaused={false}
       />
     </>
   )
