@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.techno-used-project2{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 1rem;
+display: flex;
+flex-wrap: wrap;
+}
+.techno-used-project2 span{
+color: #fff;
+padding: 0.5rem;
+background-color: #232323;
+border-radius: 5px;
+margin: 0.5rem;
+}
+
+@media only screen and (max-width:800px){
+    .techno-used-project2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        }
+    
+    .project1-heading{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .techno-used-project2 span{
+        color: #fff;
+        padding: 0.5rem;
+        background-color: #232323;
+        border-radius: 5px;
+        margin: 0.5rem 0.5rem 0.5rem 0rem;
+        }
+}

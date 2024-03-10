@@ -31,10 +31,10 @@ setIsHover(true);
     </div>
     <div className="socialiconsandtext">
     <div className="socials-med">
-        <div className="social1"> <a onMouseHover={handleMouseEnter} onMouseLeave={handlemouseLeave} style={{color: isHover ? 'green' : 'white'}} href="mailto:milindvavare@gmail.com"><div className="icon-con" >< AiOutlineMail style={{backgroundColor: isHover ? 'yellow' : 'transparent',}}  className='react-icon' size={30} /> </div> </a> <a href="mailto:milindvavare@gmail.com"><div className="icon-text">milindvavare@gmail.com</div></a></div>
-        <div className="social2"><a href=""><div className="icon-con"><  AiOutlineLinkedin className='react-icon' size={30}/></div> </a> <a href=""><div className="icon-text">LinkedIn</div></a></div>
-        <div className="social3"><a href=""><div className="icon-con">< AiOutlineInstagram className='react-icon' size={30}/></div></a><a href=""> <div className="icon-text">Instagram</div></a></div>
-        <div className="social4"><a href=""><div className="icon-con">< CiTwitter className='react-icon' size={30}/></div></a> <a href=""><div className="icon-text">Twitter</div></a></div>
+        <div className="social1"> <a onMouseHover={handleMouseEnter} onMouseLeave={handlemouseLeave} style={{color: isHover ? 'green' : 'white'}} href="mailto:udayvasave94@gmail.com"><div className="icon-con" >< AiOutlineMail style={{backgroundColor: isHover ? 'yellow' : 'transparent',}}  className='react-icon' size={30} /> </div> </a> <a href="mailto:milindvavare@gmail.com"><div className="icon-text">milindvavare@gmail.com</div></a></div>
+        <div className="social2"><a href="https://www.linkedin.com/in/uday-vasave/"><div className="icon-con"><  AiOutlineLinkedin className='react-icon' size={30}/></div> </a> <a href="https://www.linkedin.com/in/uday-vasave/"><div className="icon-text">LinkedIn</div></a></div>
+        <div className="social3"><a href="https://www.instagram.com/uday__vasave/"><div className="icon-con">< AiOutlineInstagram className='react-icon' size={30}/></div></a><a href="https://www.instagram.com/uday__vasave/"> <div className="icon-text">Instagram</div></a></div>
+        <div className="social4"><a href="https://twitter.com/udayvasave"><div className="icon-con">< CiTwitter className='react-icon' size={30}/></div></a> <a href="https://twitter.com/udayvasave"><div className="icon-text">Twitter</div></a></div>
     </div>
     </div>
     </div>

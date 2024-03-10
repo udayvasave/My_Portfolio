@@ -20,7 +20,7 @@ const Experience = () => {
         </div>
 
         <div className="exp1-expanded-desgn-place">
-        <div className="exp-designation"><span>Founder & Senior Fullstack Developer</span></div>
+        <div className="exp-designation"><span>Web Developer</span></div>
         <div className="exp-place"><span>Palghar, Maharashtra</span></div> 
         </div>
 
@@ -38,14 +38,14 @@ const Experience = () => {
         
         </div>
 {/* //////////////////// Experience no2  /////////////////// */}
-<div className="exp1">
+{/* <div className="exp1">
         <div className="exp1-expanded-company-duration">
         <div className="exp-compname"><span>DMS Computers and Technology</span></div>
         <div className="exp-duration"><span>2022 - Present</span></div>
         </div>
 
         <div className="exp1-expanded-desgn-place">
-        <div className="exp-designation"><span>Founder & Senior Fullstack Developer</span></div>
+        <div className="exp-designation"><span>Frontend Developer</span></div>
         <div className="exp-place"><span>Palghar, Maharashtra</span></div> 
         </div>
 
@@ -61,7 +61,7 @@ const Experience = () => {
 
         <div className="exp-horizontal-line"></div>
         
-        </div>
+        </div> */}
 {/* //////////////////////////////////////////////////////// */}
         <div className="exp3">
 

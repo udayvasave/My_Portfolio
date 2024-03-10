@@ -9,9 +9,13 @@ import "./navbar.css"
 function Navbar({scrollToSection}) {
 
  const [click, setClick] = useState(false);
+
+ console.log(click);
+
   const handleClick = () => {
     setClick(!click);
     // setClick(false);
+    // console.log(click);
   };
 
   

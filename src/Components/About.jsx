@@ -23,21 +23,8 @@ const About = () => {
 
     <div className="big-box">
 
-    <div className="con1">
-        <div className="logoText">
-            <div className="SkillLogo"> <FaNodeJs size={50} color='white' className='DesktopICon' /> </div>
-            <div className="SkillHead"> <span className='skillTitle'>Backend Dev</span> NodeJs, Python </div>
+   
 
-        </div>
-        <div className="skillContent">
-            <div className="h3line">
-                <span>{"<h3>"}</span>
-                <div className='straightline'></div>
-                <span>{"</h3>"}</span>
-            </div>
-            <div className="para">Skilled in backend technologies including PHP, Python, Node.js, and relational and NoSQL databases like MySQL and MongoDB</div>
-        </div>
-    </div>
     <div className="con2">
     <div className="logoText">
             <div className="SkillLogo" > <motion.div className="iconholder"  animate={{ rotate: 360 }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }}> <FaReact size={50} color='white'  className='DesktopICon' /></motion.div> </div>
@@ -50,7 +37,24 @@ const About = () => {
                 <div className='straightline'></div>
                 <span>{"</h3>"}</span>
             </div>
-            <div className="para">Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, React and NextJS frameworks.</div>
+            <div className="para">Passionate about UI/UX. Over 3 years of development experience in HTML, CSS, JS, React and NextJS frameworks.</div>
+        </div>
+    </div>
+
+
+    <div className="con1">
+        <div className="logoText">
+            <div className="SkillLogo"> <FaNodeJs size={50} color='white' className='DesktopICon' /> </div>
+            <div className="SkillHead"> <span className='skillTitle'>Backend Dev</span> NodeJs, PHP </div>
+
+        </div>
+        <div className="skillContent">
+            <div className="h3line">
+                <span>{"<h3>"}</span>
+                <div className='straightline'></div>
+                <span>{"</h3>"}</span>
+            </div>
+            <div className="para">Currently learning node and express js, with some experience using PHP for past projects.</div>
         </div>
     </div>
     
@@ -66,7 +70,7 @@ const About = () => {
                 <div className='straightline'></div>
                 <span>{"</h3>"}</span>
             </div>
-            <div className="para">Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.</div>
+            <div className="para">Experienced in creating Flutter applications, skilled at crafting engaging cross-platform mobile experiences.</div>
         </div>
     </div>
 

@@ -19,7 +19,7 @@ function App() {
    <Route exact path="/" Component={Home}/>
    <Route path="/skills" Component={About}/> 
     <Route path="/Project1" Component={Project1}/> 
-    <Route path="/Project3" Component={Project2}/> 
+    <Route path="/Project2" Component={Project2}/> 
     <Route path="/Project3" Component={Project3}/> 
     <Route path="/Project4" Component={Project4}/>  
     </Routes>

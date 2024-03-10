@@ -114,22 +114,22 @@ transition={{duration:1, }}
 
 
 >
-Hey, I'm Milind </motion.h1>
+Hey, I'm Uday </motion.h1>
 <motion.p 
 initial={{x:-1200}}
 animate={{x:0}}
-transition={{duration:1, }} className='Con1-p1'><motion.div className='Text-fllstck'  >Fullstack & App Developer </motion.div></motion.p>
+transition={{duration:1, }} className='Con1-p1'><motion.div className='Text-fllstck'  >Frontend & Mobile App Developer</motion.div></motion.p>
 
-<motion.p 
+{/* <motion.p 
 initial={{x:-1300}}
 animate={{x:0}}
-transition={{duration:1, }} className='Con1-p2'>Founder @DMS Computers & Technology</motion.p>
+transition={{duration:1, }} className='Con1-p2'>Frontend Dev @ DMS Computers and Technology</motion.p> */}
 <motion.p
  initial={{x:-1400}}
 animate={{x:0}}
 transition={{duration:1}}
  
-className='parainCon1'>Over the past four years, I've been deeply immersed in building and scaling digital <br /> solutions for startups and companies. During this time, I've had the privilege of <br /> crafting impactful web applications, websites, and mobile apps that drive <br /> innovation and deliver tangible results.</motion.p>
+className='parainCon1'>Over the past three years, I've been deeply immersed in building and scaling digital <br /> solutions for startups. During this time, I've had the privilege of <br /> crafting impactful web applications, websites, and mobile apps that drive <br /> innovation and deliver tangible results.</motion.p>
 
 </div>
 

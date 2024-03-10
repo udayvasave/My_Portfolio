@@ -30,7 +30,7 @@ const Project1 = () => {
     </div>
 
     <div className="description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde repellendus eaque suscipit nemo! Aperiam vel numquam tenetur temporibus ipsam ex doloribus, voluptatem sed labore eius animi nesciunt quis in tempore molestiae ipsa recusandae pariatur ipsum assumenda et cum ducimus asperiores consequuntur voluptas! Sit, aliquam minus provident sunt distinctio accusamus reiciendis reprehenderit blanditiis explicabo tenetur commodi. Praesentium assumenda dolorem, fuga ad magni amet sint aut nam natus inventore explicabo veniam modi excepturi vel soluta? Veritatis nisi, facilis vitae, amet iure esse ab a dolor aperiam reprehenderit doloremque repudiandae dolores. Amet corporis alias labore debitis magni necessitatibus minus. Officiis cum voluptate laudantium?</p>
+        <p>I played a significant role in the development of Royal Indian Vivah, a comprehensive matrimony web and mobile application. Using HTML, CSS, JavaScript, and Bootstrap, I crafted the frontend of the web application, ensuring its responsiveness and aesthetic appeal. For the mobile app, I utilized Flutter to deliver a seamless user experience. My contributions helped create a user-friendly platform for individuals seeking matrimonial connections.</p>
     </div>
 
     {/* <div className="links">
