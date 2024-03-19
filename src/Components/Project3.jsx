@@ -26,13 +26,13 @@ const Project3 = () => {
           <h1>Kanishka Consultancy</h1>
         </div>
         <div className="description-p3">
-      <p>Kanishka Consultancy presents a seamless solution for insurance and finance consultants to efficiently manage enquiries. Clients can submit inquiries through a user-friendly website, with data securely stored in a centralized database. Leveraging Flutter, administrators can access and take action on enquiries via a mobile app, facilitating swift review, assignment, and resolution. Real-time synchronization ensures updated information across platforms, empowering consultants to deliver timely responses and exceptional service. Kanishka Consultancy enhances operational efficiency, client satisfaction, and business growth by centralizing enquiry management and enabling proactive client engagement. With intuitive interfaces and robust security measures, Kanishka Consultancy is the ultimate tool for modern consultancy firms seeking to elevate service standards and stay ahead in the competitive market. Experience the power of Kanishka Consultancy to streamline your enquiry management process and unlock new opportunities for success in the insurance and finance industry.</p>
+      <p>Kanishka Consultancy presents a seamless solution for insurance and finance consultants to efficiently manage enquiries. Clients can submit inquiries through a user-friendly website, meticulously crafted using HTML, CSS, and JavaScript. Behind the scenes, a robust backend system powered by PHP and MySQL ensures smooth data management, enabling consultants to promptly address client needs. Additionally, our dynamic Flutter mobile app provides consultants with real-time access to enquiries, empowering them to deliver timely responses and personalized services on the go. With a focus on innovation and client satisfaction, Kanishka Consultancy revolutionizes the way insurance and finance consultants engage with their clients, driving efficiency and fostering lasting relationships.</p>
        </div>        
       </div>
       <div className="con2-p3">
         <div className="tech-used-p3">
-        <div className="techno-used-project2">
-        <span>Flutter</span> <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>PHP</span>  
+        <div className="techno-used-project3">
+        <span>Flutter</span> <span>HTML</span> <span>CSS</span> <br /> <span>JavaScript</span> <span>PHP</span>  
     </div>
         </div>
         <div className="links-p-3">
