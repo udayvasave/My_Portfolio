@@ -9,6 +9,7 @@ import Project1 from './Components/Project1';
 import Project2 from './Components/Project2';
 import Project3 from './Components/Project3';
 import Project4 from './Components/Project4';
+import AllProjects from './Components/AllProjects';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
     <Route path="/Project2" Component={Project2}/> 
     <Route path="/Project3" Component={Project3}/> 
     <Route path="/Project4" Component={Project4}/>  
+    <Route path="/AllProjects" Component={AllProjects}/>  
     </Routes>
 </Router>
   

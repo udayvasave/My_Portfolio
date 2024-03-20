@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import snack1 from '../assets/project2-screens/Screenshot 2024-03-02 212146.png'
 import snack2 from '../assets/project2-screens/snacko.png'
 import snackMobile1 from "../assets/project2-screens/IMG-20240302-WA0027.jpg"
@@ -18,8 +18,17 @@ import "./project2.css"
 
 
 const Project2 = () => {
+
+    const ScrollToTopOnMount = () => {
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []); // Empty dependency array ensures this effect runs only once on component mount
+      
+        return null; // This component doesn't render anything
+      };
   return (
     <div>
+        <ScrollToTopOnMount />
        <Navbar2 />
     <div  className="section1-project">
     <div className="main-con">

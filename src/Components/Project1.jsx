@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react';
 import Navbar2 from "./Navbar2"
 import "./project1.css"
 import { IoLinkOutline } from "react-icons/io5";
@@ -16,11 +17,18 @@ import rivMobile5 from "../assets/project1-screens/riv-mobile5.jpg"
 import rivMobile6 from "../assets/project1-screens/riv-mobile6.jpg"
 
 const Project1 = () => {
-
+    const ScrollToTopOnMount = () => {
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []); // Empty dependency array ensures this effect runs only once on component mount
+      
+        return null; // This component doesn't render anything
+      };
   return (
     <>
+    <ScrollToTopOnMount />
     <Navbar2 />
-    <div  className="section1-project">
+    <div  className="section1-project" id="section1-project1">
     <div className="main-con">
 
     <div id='section1-project' className="project1-heading"><h1>Royal Indian Vivah - Matrimony Web and Mobile App</h1></div>

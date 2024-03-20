@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar2 from "./Navbar2"
 import "./project4.css"
 import { IoLinkOutline } from "react-icons/io5";
@@ -13,8 +13,16 @@ import talasari5 from "../assets/project4-screens/ps talasari 5.png"
 import talasari6 from "../assets/project4-screens/ps talasari7.png"
 
 const Project4 = () => {
+  const ScrollToTopOnMount = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []); // Empty dependency array ensures this effect runs only once on component mount
+  
+    return null; // This component doesn't render anything
+  };
   return (
     <>
+    <ScrollToTopOnMount />
       <Navbar2 />
     <div  className="section1-project4">
     <div className="main-con-p4">

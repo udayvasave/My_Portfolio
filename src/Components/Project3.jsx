@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { IoLinkOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { FaGooglePlay } from "react-icons/fa";
@@ -16,9 +16,17 @@ import kanishka6 from "../assets/project3-screens/kanishkaApp3.jpg"
 
 
 const Project3 = () => {
-  return (
+  const ScrollToTopOnMount = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []); // Empty dependency array ensures this effect runs only once on component mount
   
+    return null; // This component doesn't render anything
+  };
+  return (
+    
     <div className='section1-p3'>
+      <ScrollToTopOnMount />
       <Navbar2 />
     <div className='project3'>
       <div className="con1-p3">
