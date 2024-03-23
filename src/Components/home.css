@@ -187,7 +187,7 @@ cursor:grab;
     justify-content: end;
 }
 .section1{
-    height: 100vh;
+    height: auto;
 }
 .Con1 h1{
 
@@ -199,4 +199,12 @@ cursor:grab;
     
     }
 
+   
+
+}
+
+@media only screen and (max-width:400px){
+    .section2{
+        margin-top: 0rem;
+    }
 }
