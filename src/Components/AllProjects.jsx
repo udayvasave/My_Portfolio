@@ -1,15 +1,20 @@
-import React from 'react'
-import './allproject.css';
+import React from "react";
+import "./allproject.css";
+import Navbar2 from "./Navbar2";
+import AllProjectList from "./AllProjectList";
+
 
 const AllProjects = () => {
   return (
     <>
-    <div className="tempDiv">
-        <h1 className='h1TempDiv' style={{display:"flex",alignItems:'center',justifyContent:'center', height:'100vh'}}> I'am currently working on improving this section! Stay tuned <span className='Emoji'>&#128522;</span></h1>
-    </div>
-    
-    </>
-  )
-}
+      <Navbar2 />
+      <div className="All-projects">
+      <AllProjectList title='Snacko' />
 
-export default AllProjects
+
+      </div>
+    </>
+  );
+};
+
+export default AllProjects;

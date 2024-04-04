@@ -30,7 +30,7 @@ const Experience = () => {
 
         <div className="exp1-expanded-tech">
             <div className="techno-used">
-                <span>React</span> <span>Flutter</span> <span>JavaScript</span> <span>HTML</span> <span>CSS</span> <span>PHP</span> <span>GitHub</span> <span>Git</span> <span>Node</span> <span>MongoDB</span> <span>MySQL</span> <span>Bootstrap</span> 
+                <span>React</span> <span>Flutter</span> <span>JavaScript</span> <span>HTML</span> <span>CSS</span> <span>PHP</span> <span>Node</span> <span>MongoDB</span> <span>MySQL</span> <span>Bootstrap</span> <span>JIRA</span> <span>GitHub</span> <span>Git</span>
             </div>
         </div>
 
