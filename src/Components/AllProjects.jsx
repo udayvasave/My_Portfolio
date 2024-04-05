@@ -17,7 +17,7 @@ const AllProjects = () => {
     number: "#1",
     title: "Snacko",
     description:
-      "Contributed to enhancing user experiences for seamless navigation in the frontend development of a website and mobile app for an AI nutritional calorie tracker covering 3.9 million products",
+      "Contributed to enhancing user experiences for seamless navigation in the frontend development of a website and mobile app for an AI nutritional calorie tracker covering 3.9 million products.",
     linkss: {
       github: "https://github.com/udayvasave",
       url: "https://snacko.health/",
@@ -31,11 +31,12 @@ const AllProjects = () => {
     number: "#2",
     title: "Royal Indian Vivah",
     description:
-      "Crafted a frontend of matrimonial matchmaking platform offering seamless web and mobile experiences, fostering meaningful connections",
+      "Crafted a frontend of matrimonial matchmaking platform offering seamless web and mobile experiences, fostering meaningful connections.",
     linkss: {
       github: "https://github.com/udayvasave",
       url: "https://app.royalindianvivah.com",
-      playstore: "https://play.google.com/store/apps/details?id=com.royal_indian_vivah&hl=en&gl=US",
+      playstore:
+        "https://play.google.com/store/apps/details?id=com.royal_indian_vivah&hl=en&gl=US",
       // apple:"https://apps.apple.com/us/app/snacko-it/id6450678993",
       projectPage: "/Project1",
     },
@@ -45,7 +46,7 @@ const AllProjects = () => {
     number: "#3",
     title: "Kanishka Consultancy",
     description:
-      "Led full-stack development for a dynamic client engagement platform, delivering personalized financial consultation via a seamless Flutter app(Android)",
+      "Led full-stack development for a dynamic client engagement platform, delivering personalized financial consultation via a seamless Flutter app(Android).",
     linkss: {
       // github: "https://github.com/udayvasave",
       url: "https://sidesambare.in",
@@ -59,7 +60,7 @@ const AllProjects = () => {
     number: "#4",
     title: "Letter Monitoring System ",
     description:
-      "Collaborated on the frontend development of an online letter management web app for Panchayat Samiti Talasari & Dahanu",
+      "Collaborated on the frontend development of an online letter management web app for Panchayat Samiti Talasari & Dahanu.",
     linkss: {
       // github: "https://github.com/udayvasave",
       // url: "https://sidesambare.in",
@@ -73,7 +74,7 @@ const AllProjects = () => {
     number: "#5",
     title: "School Management App",
     description:
-      "Designed the frontend of a Flutter-based Parent and Teacher mobile apps",
+      "Designed the frontend of a Flutter-based Parent and Teacher mobile apps.",
     linkss: {
       github: "https://github.com/udayvasave",
       // url: "https://sidesambare.in",
@@ -83,11 +84,24 @@ const AllProjects = () => {
     },
   };
 
-  const projectTravelrideGoa = {
+  const projectMusicPlayer = {
     number: "#6",
+    title: "Music Player",
+    description:
+      "Developed a dynamic music player using JavaScript, featuring essential functionalities such as play, pause, next, previous, and repeat.",
+    linkss: {
+      github: "https://github.com/udayvasave/Music-Player",
+      // url: "https://mamachagaonresortt.netlify.app/",
+      // playstore:"https://play.google.com/store/apps/details?id=health.snacko",
+      // apple:"https://apps.apple.com/us/app/snacko-it/id6450678993",
+      // projectPage:'/Project2'
+    },
+  };
+  const projectTravelrideGoa = {
+    number: "#7",
     title: "Travelride Goa",
     description:
-      "Developed frontend for a static tourist website spotlighting Goa's landmarks, cuisine, entertainment, accommodations, and experiences",
+      "Developed frontend for a static tourist website spotlighting Goa's landmarks, cuisine, entertainment, accommodations, and experiences.",
     linkss: {
       github: "https://github.com/udayvasave/Travelride_Goa/",
       url: "https://travellridegoa.netlify.app/",
@@ -98,13 +112,28 @@ const AllProjects = () => {
   };
 
   const projectmamachaGaonResort = {
-    number: "#7",
+    number: "#8",
     title: "Mama Cha Gaon Resort",
     description:
-      "Created a comprehensive website tailored to showcase the unique offerings and amenities of a luxurious resort",
+      "Created a comprehensive website tailored to showcase the unique offerings and amenities of a luxurious resort.",
     linkss: {
       github: "https://github.com/udayvasave/Mama-cha-gaon-Resort",
       url: "https://mamachagaonresortt.netlify.app/",
+      // playstore:"https://play.google.com/store/apps/details?id=health.snacko",
+      // apple:"https://apps.apple.com/us/app/snacko-it/id6450678993",
+      // projectPage:'/Project2'
+    },
+  };
+ 
+
+  const projectJuniorClgWebsite = {
+    number: "#9",
+    title: "Csmacc Padgha Junior College",
+    description:
+      "Developed a junior college website using HTML CSS JS Bootstrap.",
+    linkss: {
+      // github: "https://github.com/udayvasave/Music-Player",
+      url: "https://csmaccppadgha.netlify.app/",
       // playstore:"https://play.google.com/store/apps/details?id=health.snacko",
       // apple:"https://apps.apple.com/us/app/snacko-it/id6450678993",
       // projectPage:'/Project2'
@@ -157,6 +186,14 @@ const AllProjects = () => {
         <div className="sizedbox" style={{ height: "1rem" }}></div>
 
         <AllProjectList
+          title={projectMusicPlayer.title}
+          description={projectMusicPlayer.description}
+          number={projectMusicPlayer.number}
+          links={projectMusicPlayer.linkss}
+        />
+        <div className="sizedbox" style={{ height: "1rem" }}></div>
+
+        <AllProjectList
           title={projectTravelrideGoa.title}
           description={projectTravelrideGoa.description}
           number={projectTravelrideGoa.number}
@@ -170,6 +207,17 @@ const AllProjects = () => {
           number={projectmamachaGaonResort.number}
           links={projectmamachaGaonResort.linkss}
         />
+        <div className="sizedbox" style={{ height: "1rem" }}></div>
+
+        
+
+        <AllProjectList
+          title={projectJuniorClgWebsite.title}
+          description={projectJuniorClgWebsite.description}
+          number={projectJuniorClgWebsite.number}
+          links={projectJuniorClgWebsite.linkss}
+        />
+        <div className="sizedbox" style={{ height: "1rem" }}></div>
       </div>
     </>
   );
