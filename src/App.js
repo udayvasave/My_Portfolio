@@ -45,6 +45,7 @@ import Project2 from './Components/Project2';
 import Project3 from './Components/Project3';
 import Project4 from './Components/Project4';
 import AllProjects from './Components/AllProjects';
+import AllProjectList from './Components/AllProjectList';
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route path="/Project3" element={<Project3 />} />
         <Route path="/Project4" element={<Project4 />} />
         <Route path="/AllProjects" element={<AllProjects />} />
+        {/* <Route path="/AllProjectList" element={<AllProjectList />} /> */}
       </Routes>
     </BrowserRouter>
   );

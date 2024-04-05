@@ -49,9 +49,9 @@ const Navbar2 = (scrollToSection) => {
           <Link to="/"  >{'<home />'}</Link>
           {/* <a onClick={() => scrollToSection('home')}> {'<home />'}</a> */}
         </li>
-        {/* <li>          
-          <Link to="/#sec2">{'<skills />'}</Link>
-        </li> */}
+        <li>          
+          <Link to="/AllProjects">{'<projects />'}</Link>
+        </li>
 
         {/* <li> */}
         {/* <Link to="/#section3">{'<work />'}</Link> */}
