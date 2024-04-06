@@ -165,6 +165,15 @@ text-decoration: none;
 color: white;
 }
 
+.button a {
+    color: #fff;
+}
+
+.readmoreRoyal a{
+width: 100%;
+color: #fff;
+}
+
 .Link {
     text-decoration: none;
 }
