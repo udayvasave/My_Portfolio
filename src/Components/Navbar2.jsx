@@ -34,7 +34,6 @@ const Navbar2 = (scrollToSection) => {
 
   
 
-
   return (
     <>
        <div className="navbar">
