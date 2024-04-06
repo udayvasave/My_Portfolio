@@ -24,37 +24,37 @@ const Work = () => {
     window.gtag('event', 'click', {
         'event_category': 'Button Clicks',
         'event_action': 'View All Button Click',
-        'event_label': 'View All'
+        'event_label': 'View All Project'
     });
    }
 
    const royalReadmoreBtn = ()=> {
     window.gtag('event', 'click', {
         'event_category': 'Button Clicks',
-        'event_action': 'View All Button Click',
-        'event_label': 'View All'
+        'event_action': 'Read More Button Click',
+        'event_label': 'Read More Royal'
     });
    }
 
    const snackoReadMoreBtn = ()=> {
     window.gtag('event', 'click', {
         'event_category': 'Button Clicks',
-        'event_action': 'View All Button Click',
-        'event_label': 'View All'
+        'event_action': 'Read More Button Click',
+        'event_label': 'Read More Snacko'
     });
    }
    const kanishkaReadMoreBtn = ()=> {
     window.gtag('event', 'click', {
         'event_category': 'Button Clicks',
-        'event_action': 'View All Button Click',
-        'event_label': 'View All'
+        'event_action': 'Read More Button Click',
+        'event_label': 'Read More Kanishka'
     });
    }
    const panchayatSamitiReadMorebtn = ()=> {
     window.gtag('event', 'click', {
         'event_category': 'Button Clicks',
-        'event_action': 'View All Button Click',
-        'event_label': 'View All'
+        'event_action': 'Read More Button Click',
+        'event_label': 'Read More Tapal Monitor'
     });
    }
 
