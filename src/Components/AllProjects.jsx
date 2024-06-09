@@ -140,6 +140,20 @@ const AllProjects = () => {
     },
   };
 
+  const projectInvestmate = {
+    number: "#10",
+    title: "InvestMate",
+    description:
+      "Our stock simulator combines three key features: real-time trading with live data using a refillable dummy account, comprehensive learning modules on stock market concepts, and essential risk management tools. This integrated platform provides a practical and holistic experience for aspiring traders.",
+    linkss: {
+      github: "https://github.com/udayvasave/InvestMate",
+      url: "https://investmatefinance.tech/",
+      // playstore:"https://play.google.com/store/apps/details?id=health.snacko",
+      // apple:"https://apps.apple.com/us/app/snacko-it/id6450678993",
+      // projectPage:'/Project2'
+    },
+  };
+
   return (
     <>
       <ScrollToTopOnMount />
@@ -216,6 +230,15 @@ const AllProjects = () => {
           description={projectJuniorClgWebsite.description}
           number={projectJuniorClgWebsite.number}
           links={projectJuniorClgWebsite.linkss}
+        />
+        <div className="sizedbox" style={{ height: "1rem" }}></div>
+
+
+        <AllProjectList
+          title={projectInvestmate.title}
+          description={projectInvestmate.description}
+          number={projectInvestmate.number}
+          links={projectInvestmate.linkss}
         />
         <div className="sizedbox" style={{ height: "1rem" }}></div>
       </div>

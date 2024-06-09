@@ -76,7 +76,7 @@ display: none;
     left: -100%;
     position: absolute;
     color: #ffffff;
-    background-color: #212223;
+    background-color: #212224;
     z-index: 3;
     transition: 0.3s;
   }
