@@ -144,7 +144,7 @@ const AllProjects = () => {
     number: "#10",
     title: "InvestMate",
     description:
-      "Our stock simulator combines three key features: real-time trading with live data using a refillable dummy account, comprehensive learning modules on stock market concepts, and essential risk management tools. This integrated platform provides a practical and holistic experience for aspiring traders.",
+      "Our stock simulator offers a unique blend of essential tools and features for aspiring traders. Users can engage in real-time trading with live market data through a refillable dummy account, ensuring a practical learning experience without financial risk. The platform also includes comprehensive educational modules covering key stock market concepts, along with essential risk management tools. This integrated approach provides users with a well-rounded and hands-on trading experience.",
     linkss: {
       github: "https://github.com/udayvasave/InvestMate",
       url: "https://investmatefinance.tech/",
